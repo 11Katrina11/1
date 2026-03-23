@@ -97,3 +97,75 @@ clogs: 0.15%
 
 </body>
 </html>
+
+  <!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<style>
+    /* Стили для карточки */
+    .accuracy-card {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 20px;
+        width: 300px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .accuracy-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .accuracy-icon {
+        margin-right: 8px;
+        font-size: 1.2em;
+    }
+
+    .accuracy-value {
+        font-size: 24px;
+        font-weight: bold;
+        color: #28a745; /* Зеленый цвет для успеха */
+    }
+
+    /* Стили для прогресс-бара */
+    .progress-container {
+        width: 100%;
+        background-color: #e9ecef;
+        border-radius: 10px;
+        height: 10px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .progress-bar {
+        height: 100%;
+        width: 73%; /* Значение 73% */
+        background: linear-gradient(90deg, #28a745, #5dd66f);
+        border-radius: 10px;
+        transition: width 1s ease-in-out;
+    }
+</style>
+</head>
+<body>
+
+<!-- HTML Код виджета -->
+<div class="accuracy-card">
+    <div class="accuracy-header">
+        <span class="accuracy-icon">✅</span>
+        <span>ТОЧНОСТЬ МОДЕЛИ</span>
+    </div>
+    <div class="accuracy-value">73.00%</div>
+    
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+</div>
+
+</body>
+</html>
